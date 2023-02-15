@@ -29,3 +29,14 @@ making the diagram readable would ensure work is continues even if group working
 some tools to work with : plantuml and structurizr
 
 Done with the video
+
+Chirag Nayyar Video about the free tier:
+
+Notes about it :
+Bills Section contain each service and classify them by region
+noticed that the forecast in the homepage is differenet from the bills section
+you can set alarms from cloud watch
+10 alarms are free
+I should use tags to categorize resources to make budget analytics better
+
+End of video
