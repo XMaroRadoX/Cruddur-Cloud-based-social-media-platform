@@ -40,3 +40,9 @@ you can set alarms from cloud watch
 I should use tags to categorize resources to make budget analytics better
 
 End of video
+
+Generting Credentials video :
+Notes about it : 
+cloudshell depends on the region
+aws --cli-auto-prompt to make cli auto suggest commands
+cli is fun
