@@ -50,3 +50,11 @@ Setup up the cli
 and updated the gitpod config
 Created budget using cli yaayayaay
 created alarm too
+
+
+Security Video :
+notes about it :
+security is gradual and is incremeted gradually 
+Added mfa authentication to my root account
+Enabled CloudTrail
+Set up Organiztions and scp's
