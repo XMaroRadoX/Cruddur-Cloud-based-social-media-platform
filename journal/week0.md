@@ -58,3 +58,8 @@ security is gradual and is incremeted gradually
 Added mfa authentication to my root account
 Enabled CloudTrail
 Set up Organiztions and scp's
+
+
+Homework Section :
+Link to Conceptual diagram : https://lucid.app/lucidchart/39d55e21-be61-41c3-8378-1d49c0b8181f/edit?viewport_loc=-1070%2C-878%2C2371%2C1312%2C0_0&invitationId=inv_26eae480-c0d3-433b-9689-f1b922e1169d
+Link to Logical Diagram : https://lucid.app/lucidchart/0d14a873-d6bc-47fe-8d4a-0d66b607da3f/edit?view_items=C09x.ijlKOVN&invitationId=inv_1b1419a4-4c03-4856-a447-c979b25fbab5
