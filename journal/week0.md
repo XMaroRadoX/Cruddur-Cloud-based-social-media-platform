@@ -46,3 +46,7 @@ Notes about it :
 cloudshell depends on the region
 aws --cli-auto-prompt to make cli auto suggest commands
 cli is fun
+Setup up the cli
+and updated the gitpod config
+Created budget using cli yaayayaay
+created alarm too
