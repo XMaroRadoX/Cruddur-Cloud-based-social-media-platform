@@ -20,8 +20,29 @@ Tried changing the tag in the command as ws mentioned by James was suprised that
 
 Ordering Really matters in the commands (make sure the container is named at the end)
 don't use double quotes
-Ex: docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
+Ex:
+>``` docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask```
  
 Got the connection YAAAAY! 
 ![](assets/week1/running_the_livestream_container.png)
 ![](assets/week1/cruddur_live.png)
+
+### Watching Docker Security:
+#### Notes to take care of when developing containers:
+* Keep Host & Docker Updated to latest security Patches
+* Docker daemon & containers should run in non-root user mode
+* Image Vulnerability Scanning
+* Trusting a Private vs Public Image Registry
+* No Sensitive Data in Docker files or Images
+* Use Secret Management Services to Share secrets
+* Read only File system and Volume for Docker
+* Separate databases for long term storage
+* Use DevSecOps practices while building application security
+* Ensure all Code is tested for vulnerabilities before production use 
+
+#### Services to manage Security :
+##### snyk
+Just tried it and found that our project has some security flaws :cry:
+[](assets/week1/snyk_sec_check.png)
+
+Other services : clair Inspector secrets manager Docker CIS
