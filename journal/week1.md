@@ -50,3 +50,5 @@ Other services : clair Inspector secrets manager Docker CIS
 #### Notfication feature video:
 Signed up horraaay 
 [](assets/week1/cruddur_sign_up.png)
+Implemeneted Notifications
+[](assets/week1/implemented_notifications.png)
