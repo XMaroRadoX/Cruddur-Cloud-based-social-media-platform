@@ -46,3 +46,7 @@ Just tried it and found that our project has some security flaws :cry:
 [](assets/week1/snyk_sec_check.png)
 
 Other services : clair Inspector secrets manager Docker CIS
+
+#### Notfication feature video:
+Signed up horraaay 
+[](assets/week1/cruddur_sign_up.png)
