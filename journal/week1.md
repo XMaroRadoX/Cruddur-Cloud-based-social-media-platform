@@ -52,3 +52,28 @@ Signed up horraaay
 [](assets/week1/cruddur_sign_up.png)
 Implemeneted Notifications
 [](assets/week1/implemented_notifications.png)
+Setup Postgres
+[](assets/week1/setup_postgres.png)
+
+## Stretched Homework
+
+### Pushing and tagging an image to dockerhub
+
+#### So I used these commands:
+
+* Build
+> ```docker build -t xmaroradox/cruddur_frontend:1.23 frontend-react-js```
+
+> ```docker build -t xmaroradox/cruddur_backend:1.23 backend-flask```
+
+* Push
+> ``` docker push xmaroradox/cruddur_frontend:1.23 ```
+
+> ``` docker push xmaroradox/cruddur_backend:1.23```
+
+Here is an image of the pushed image
+[](assets/week1/docker_images.png)
+
+
+### Ran Docker Locally 
+[](assets/week1/docker_locally.png)
