@@ -81,3 +81,6 @@ setting x-ray :
 [   ](assets/week2/x-ray-setup.png)
 this one was a bit diffcult as I had to reconfigure my keys
 note to self : ensure you are using your keys when doing such things
+
+creating sampling rule:
+[](assets/week2/sampling_rule.png)
