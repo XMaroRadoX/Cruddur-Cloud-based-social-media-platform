@@ -76,3 +76,8 @@ Middleware is used in web apps  to do lots of things:
 * white/block list addresses 
 * ensure format and size of files
 * telemetery
+
+setting x-ray : 
+[   ](assets/week2/x-ray-setup.png)
+this one was a bit diffcult as I had to reconfigure my keys
+note to self : ensure you are using your keys when doing such things
