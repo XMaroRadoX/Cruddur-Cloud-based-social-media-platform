@@ -15,3 +15,5 @@ Seeing Trace actiivies
 
 To know your key : http://honeycomb-whoami.glitch.me/trace
 checkout : glitch.com
+
+Obeserervailbility is better done early in the development process
