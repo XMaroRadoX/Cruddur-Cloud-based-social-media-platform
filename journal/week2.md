@@ -70,4 +70,9 @@ Central Observability Platform - Security:
 * Open Source Dashboards
 
 # Instrumeting X-ray
-
+Notes:
+Middleware is used in web apps  to do lots of things: 
+* Handle authentication
+* white/block list addresses 
+* ensure format and size of files
+* telemetery
