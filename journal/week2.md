@@ -116,13 +116,13 @@ Projects
 I should always test my skilss against the market
 
 Golden rule when learning new skills: 
-![](openinthecloud/assets/golden_rules.png)
+![](openupthecloud/assets/golden_rules.png)
 
 
 ## Open Cloud Homework
 
 #### My journey to the cloud 
-![](openinthecloud/homework/Journey_to_the_cloud.png)
+![](openupthecloud/homework/Journey_to_the_cloud.png)
 
 
 #### My 5 jobs 
