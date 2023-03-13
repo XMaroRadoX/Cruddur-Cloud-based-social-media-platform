@@ -175,3 +175,7 @@ VMware portfolio (vSphere, VSAN, NSX, Horizon view, Horizon App, WS1, AW, Pivota
 servers (cisco, dell, fujitsu)
 
 This one in particular I found the description not relative 
+
+Instrumenting x-ray :
+instrumented x-ray to get mock-data
+![](assets/week2/x-ray_mock.png)
