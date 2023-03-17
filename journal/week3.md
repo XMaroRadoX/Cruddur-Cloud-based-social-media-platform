@@ -7,7 +7,7 @@
 * Creating a  cognito user pool
 ![](assets/week3/created_pool.png)
 
-* Created a user 
+* Created a user
 ![](assets/week3/created_pool.png)
 
 * Signed with this user
