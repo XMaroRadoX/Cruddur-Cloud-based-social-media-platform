@@ -1,0 +1,82 @@
+{
+  "name": "My Codespace",
+  "extensions": [
+    "42Crunch.vscode-openapi",
+    "cweijan.vscode-postgresql-client2",
+    "hbenl.vscode-test-explorer"
+  ],
+  "tasks": [
+    {
+      "label": "aws-cli",
+      "command": "bash",
+      "type": "shell",
+      "env": {
+        "AWS_CLI_AUTO_PROMPT": "on-partial"
+      },
+      "options": {
+        "cwd": "/workspaces/my-repo"
+      },
+      "preLaunchTask": "aws-cli-setup"
+    },
+    {
+      "label": "aws-cli-setup",
+      "command": "bash",
+      "type": "shell",
+      "options": {
+        "cwd": "/workspaces/my-repo"
+      },
+      "runOptions": {
+        "runInBackground": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "args": [
+        "-c",
+        "cd /workspaces/my-repo && curl \"https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip\" -o \"awscliv2.zip\" && unzip awscliv2.zip && sudo ./aws/install"
+      ]
+    },
+    {
+      "label": "react-js",
+      "command": "bash",
+      "type": "shell",
+      "options": {
+        "cwd": "/workspaces/my-repo/frontend-react-js"
+      },
+      "args": [
+        "-c",
+        "npm i"
+      ]
+    },
+    {
+      "label": "postgres",
+      "command": "bash",
+      "type": "shell",
+      "options": {
+        "cwd": "/workspaces/my-repo"
+      },
+      "runOptions": {
+        "runInBackground": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "args": [
+        "-c",
+        "curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg && echo \"deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main\" |sudo tee /etc/apt/sources.list.d/pgdg.list && sudo apt update && sudo apt install -y postgresql-client-13 libpq-dev"
+      ]
+    }
+  ],
+  "forwardPorts": [
+    3000,
+    4567,
+    2000
+  ],
+  "postCreateCommand": "yarn install",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
