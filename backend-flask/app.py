@@ -165,22 +165,19 @@ def data_create_message():
 @xray_recorder.capture('activities_home')
 def data_home():
   access_token = extract_access_token(request.headers)
+
   try:
       claims =cognito_jwt_token.verify(access_token)
       app.logger.debug('Authenticated')
       app.logger.debug('claims')
       app.logger.debug(claims)
+      data = HomeActivities.run(logger= LOGGER , cognito_user_id=claims['username'])
       #Authenticated
   except TokenVerifyError as e:
       #unauthenticated
       app.logger.debug('Un-Authenticated')
-
-
-
-  data = HomeActivities.run(logger= LOGGER)
-
+      data = HomeActivities.run(logger= LOGGER)
   return data, 200
-
   
 @app.route("/api/activities/notifications", methods=['GET'])
 def data_notifications():
