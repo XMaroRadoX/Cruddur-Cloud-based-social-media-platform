@@ -28,6 +28,13 @@ This Video is really hard and understanding it needs a good technical person gla
 
 * ther options such as the AWS SDK for Python, and the AWS JWT Cognito library. The latter is a JavaScript library that does not have a Python equivalent
 
+### Changed the UI
+Picked some new colors and did a revamp
+Sign-Screen:
+![](assets/week3/cruddur_sign.png)
+Home-Screen:
+![](assets/week3/cruddur_home.png)
+
 ### Watching Amazon cognito security best practices
 
 #### Notes:
