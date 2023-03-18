@@ -1,8 +1,9 @@
+@import url(../index.css);
 .trendings {
   display: flex;
   flex-direction: column;
-  background: #000;
-  border-radius: 8px;
+  background: var(--tileground-color);
+  border-radius: 20px;
   margin-top: 24px;
 }
 
@@ -10,7 +11,7 @@
   font-size: 16px;
   color: #fff;
   padding: 16px;
-  border-bottom: solid 1px rgb(31,36,49);
+  border-bottom: solid 3px var(--separtor-color);
 }
 
 .trendings a {

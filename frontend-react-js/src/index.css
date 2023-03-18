@@ -1,8 +1,23 @@
+:root {
+  /* Define site colors */
+  --primary-color: #1DA1F2; /* Twitter blue */
+  --secondary-color: #14171A; /* Twitter black */
+  --accent-color: #E0245E; /* Twitter pink */
+  --success-color: #17BF63; /* Success green */
+  --warning-color: #FFAD1F; /* Warning yellow */
+  --error-color: #F45D5D; /* Error red */
+  --info-color: #1C9CEB; /* Info blue */
+  --separtor-color : #ce00ff;
+  --background-color: #000000;
+  --tileground-color: #1f1528;
+  --avatar-color:#c471ff;
+}
+
 * { box-sizing: border-box; }
 html,body { 
   height: 100%; 
   width: 100%; 
-  background: rgb(14,3,28);
+  background: var(--background-color);
 }
 
 body {

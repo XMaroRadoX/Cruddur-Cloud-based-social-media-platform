@@ -27,3 +27,9 @@ This Video is really hard and understanding it needs a good technical person gla
 * while it is possible to use the AWS Cognito identity provider to verify access tokens, it is not the best solution because it involves hitting an external API to verify the token, and also because it retrieves additional data that is not required.
 
 * ther options such as the AWS SDK for Python, and the AWS JWT Cognito library. The latter is a JavaScript library that does not have a Python equivalent
+
+### Watching Amazon cognito security best practices
+
+#### Notes:
+
+* Security Assertion Markup Language (SAML). Its primary role in online security is that it enables you to access multiple web applications using one set of login credentials.

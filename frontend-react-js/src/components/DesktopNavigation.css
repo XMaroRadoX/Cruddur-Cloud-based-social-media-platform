@@ -3,11 +3,12 @@ nav {
   width: 280px;
   padding-top: 16px;
   padding-right: 24px;
+  padding-left: 24px;
 }
 nav .logo {
   width: 48px;
   height: 48px;
-  fill: rgb(149,0,255);
+  fill: #c471ff;
 }
 
 nav a.primary {
@@ -34,16 +35,16 @@ nav a.primary:hover .icon {
 }
 
 nav a.primary.active {
-  color: rgb(149,0,255) !important;
+  color: #c471ff !important;
   font-weight: 600;
 }
 nav a.primary.active svg {
-  fill: rgb(149,0,255) !important;
+  fill: #c471ff !important;
 }
 
 nav button.post {
   display: block;
-  background: rgba(149,0,255,1);
+  background: #8e00b0;
   color: #fff;
   border: none;
   text-decoration: none;
