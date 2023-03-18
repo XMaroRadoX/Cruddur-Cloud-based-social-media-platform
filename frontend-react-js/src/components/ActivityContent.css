@@ -67,3 +67,7 @@
   font-size: 16px;
   margin-top: 8px;
 }
+.replies .activity_avatar {
+  height: 50px;
+  width: 50px;
+}
