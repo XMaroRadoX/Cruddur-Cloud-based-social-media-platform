@@ -1,5 +1,17 @@
 #! /usr/bin/bash
-schema_path=$(realpath .)/db/schema.sql
+
+RED='\033[1;31m'
+NO_COLOR='\033[0m'
+LABEL="DATABASE SCHEMA LOADING"
+printf "${RED}== ${LABEL}${NO_COLOR}\n"
+schema_path="$(realpath .)/db/schema.sql"
 echo $schema_path
+
+if [ "$1" = "prod" ]; then
+  echo "Running in production mode"
+  URL=$PROD_CONNECTION_URL
+else
+  URL=$CONNECTION_URL
+fi
 
 psql $CONNECTION_URL cruddur < $schema_path
