@@ -19,5 +19,4 @@
 ### Watching Verifying congnito jwt server side:
 
 #### Notes:
-
-*
+This Video is really hard and understanding it needs a good technical person glad this video exists
