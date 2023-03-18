@@ -73,8 +73,8 @@ tracer = trace.get_tracer(__name__)
 app = Flask(__name__)
 
 cognito_jwt_token = CognitoJwtToken(
-  user_pool_id=os.getenv("AWS_COGNTIO_USER_POOL"),
-  user_pool_client_id=os.getenv("AWS_COGNTIO_USER_POOL_CLIENT_ID"), 
+  user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"),
+  user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"), 
   region=os.getenv("AWS_DEFAULT_REGION")
   )
 # Rollbar --------------
