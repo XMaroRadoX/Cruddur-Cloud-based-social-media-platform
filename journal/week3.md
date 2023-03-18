@@ -15,3 +15,9 @@
 
 * Recieved Token from cognito
 ![](assets/week3/cognito_token.png)
+
+### Watching Verifying congnito jwt server side:
+
+#### Notes:
+
+*
