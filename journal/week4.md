@@ -9,4 +9,13 @@
 
 ![](assets/week4/rds_setup.png)
 
-####
+* side note : noting down and working at the same time is hard hahaha 😆
+
+### Doing Cognito Post Confirmation lambda
+
+#### Notes:
+
+### Watching Creating Activities
+
+#### Notes:
+* it is better to sanatize input 
