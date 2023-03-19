@@ -28,14 +28,16 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "42Crunch.vscode-openapi",
-        "ms-azuretools.vscode-docker",
-        "ms-python.python",
-        "hashicorp.terraform",
-        "redhat.ansible",
-        "redhat.vscode-yaml",
-        "amazonwebservices.aws-toolkit-vscode"
-      ]
+		"42Crunch.vscode-openapi",
+		"ms-azuretools.vscode-docker",
+		"ms-python.python",
+		"hashicorp.terraform",
+		"redhat.ansible",
+		"redhat.vscode-yaml",
+		"amazonwebservices.aws-toolkit-vscode",
+		"PKief.material-icon-theme",
+		"Equinusocio.vsc-community-material-theme"
+	]
     }
   },
   "settings": {

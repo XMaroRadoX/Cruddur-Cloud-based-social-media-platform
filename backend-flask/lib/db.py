@@ -1,5 +1,5 @@
-from psycopg_pool import ConnectionPool
 import os
+from psycopg_pool import ConnectionPool
 
 def query_wrap_object(template):
   sql = f"""
