@@ -1,0 +1,1 @@
+gh secret set NAME -b VALUE -r REPO_OWNER/REPO_NAME -u
