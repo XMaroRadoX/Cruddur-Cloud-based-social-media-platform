@@ -1,3 +1,4 @@
 gh secret set NAME -b VALUE -r REPO_OWNER/REPO_NAME -u
 
+
  export CODESPACES_IP=$(curl ifconfig.me) && source "$PWD/backend-flask/bin/rds-update-sg-rule-codespaces"
