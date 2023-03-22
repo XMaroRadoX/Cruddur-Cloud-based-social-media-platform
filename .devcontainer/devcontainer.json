@@ -63,5 +63,5 @@
     "ROLLBAR_ACCESS_TOKEN": "${localEnv:ROLLBAR_ACCESS_TOKEN}"
   },
   "remoteUser": "bootcamp",
-  "postAttachCommand": "cd ./frontend-react-js && npm install && cd ../backend-flask && pip install -r requirements.txt"
+  "postAttachCommand": "bash .devcontainer/postCreateCommand.sh"
 }
