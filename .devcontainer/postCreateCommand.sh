@@ -12,9 +12,6 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" 
 sudo apt update
 sudo apt install -y postgresql-client-13 libpq-dev
 
-# UPDATE RDS SECURITY RULES
-source backend-flask/bin/rds-update-sg-rule-codespaces
-
 # INSTALL FRONTEND REACT DEPENDENCIES
 LABEL="INSTALL FRONTEND REACT DEPENDENCIES"
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
