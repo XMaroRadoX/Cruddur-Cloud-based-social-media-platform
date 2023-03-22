@@ -64,5 +64,4 @@
   },
   "remoteUser": "bootcamp",
   "postAttachCommand": "cd ./frontend-react-js && npm install && cd ../backend-flask && pip install -r requirements.txt && export CODESPACES_IP=$(curl ifconfig.me) && source "$PWD/backend-flask/bin/rds-update-sg-rule-codespaces""
-"
 }
