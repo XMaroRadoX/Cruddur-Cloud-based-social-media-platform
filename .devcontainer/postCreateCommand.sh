@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install -y postgresql-client-13 libpq-dev
 
 # UPDATE RDS SECURITY RULES
-source backend-flask/bin/rds-update-sg-rule
+source backend-flask/bin/rds-update-sg-rule-codespaces
 
 # INSTALL FRONTEND REACT DEPENDENCIES
 LABEL="INSTALL FRONTEND REACT DEPENDENCIES"
@@ -26,3 +26,9 @@ LABEL="INSTALL BACKEND FLASK REQUIREMENTS"
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
 cd /workspaces/aws-bootcamp-cruddur-2023/backend-flask
 pip install -r requirements.txt
+
+# Connect To RDS
+LABEL="Connect To RDS"
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+ export CODESPACES_IP=$(curl ifconfig.me)
+ source "$PWD/backend-flask/bin/rds-update-sg-rule-codespaces"
