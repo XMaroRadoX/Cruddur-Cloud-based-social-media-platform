@@ -12,19 +12,22 @@
     2000
   ],
   "portsAttributes": {
-    "3000": {
-      "label": "Cruddur Frontend",
-      "onAutoForward": "notify"
-    },
-    "4567": {
-      "label": "Cruddur Backend",
-      "onAutoForward": "notify"
-    },
-    "2000": {
-      "label": "AWS X-Ray Daemon",
-      "onAutoForward": "notify"
-    }
-  },
+	"2000": {
+		"label": "AWS X-Ray Daemon",
+		"onAutoForward": "notify"
+	},
+	"3000": {
+		"label": "Cruddur Frontend",
+		"onAutoForward": "notify"
+	},
+	"4567": {
+		"label": "Cruddur Backend",
+		"onAutoForward": "notify"
+	},
+	"5432": {
+		"label": "RDS:5432"
+	}
+},
   "customizations": {
     "vscode": {
       "extensions": [
@@ -60,5 +63,6 @@
     "ROLLBAR_ACCESS_TOKEN": "${localEnv:ROLLBAR_ACCESS_TOKEN}"
   },
   "remoteUser": "bootcamp",
-  "postAttachCommand": "cd ./frontend-react-js && npm install && cd ../backend-flask && pip install -r requirements.txt && export CODESPACES_IP=$(curl ifconfig.me) && source "$PWD/backend-flask/bin/rds-update-sg-rule-codespaces""
+  "postAttachCommand": "cd ./frontend-react-js && npm install && cd ../backend-flask && pip install -r requirements.txt && export CODESPACES_IP=$(curl ifconfig.me) && source "$HOME/backend-flask/bin/rds-update-sg-rule-codespaces""
+"
 }
