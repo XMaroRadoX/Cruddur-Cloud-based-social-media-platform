@@ -1,14 +1,22 @@
-#!/usr/bin/env python3
+#! /usr/bin/bash
+set -e
 
-import boto3
-import sys
+# ./bin/ddb/drop cruddur-messages prod
 
-attrs={
-    'endpoint_url': 'http://localhost:8000'
-       }
-if len(sys.argv) == 2:
-    if "prod" in sys.argv[1]:
-        attrs={
-            'endpoint_url': 'http://localhost:8000'
-               }
-dynamodb = boto3.client('dynambodb',**attrs)
+if [ -z "$1" ]
+then
+echo "No cruddur-messages table name supplied eg ./bin/ddb/drop cruddur-messages prod"
+exit 1
+fi
+TABLE_NAME=$1
+
+if [ "$2" = "prod" ]
+then
+ENDPOINT_URL=""
+else
+ENDPOINT_URL="--endpoint-url=http://localhost:8000"
+fi
+
+echo "DELETING TABLE : $TABLE_NAME"
+aws dynamodb delete-table $ENDPOINT_URL \
+    --table-name $TABLE_NAME

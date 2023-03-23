@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-
-import sys
+#! /usr/bin/env python3
 import boto3
+import sys
 
 attrs = {
     'endpoint_url': 'http://localhost:8000'
@@ -11,8 +10,8 @@ if len(sys.argv) == 2:
         attrs = {
             'endpoint_url': ''
         }
-ddb = boto3.client('dynambodb', **attrs)
-table_name = 'cruddur-message'
+ddb = boto3.client('dynamodb', **attrs)
+table_name = 'cruddur-messages'
 
 response = ddb.create_table(
     TableName=table_name,
@@ -36,23 +35,23 @@ response = ddb.create_table(
             'KeyType':  'RANGE'
         },
     ],
-    LocalSecondaryIndexes=[
-        {
-            'IndexName': 'string',
-            'KeySchema': [
-                {
-                    'AttributeName': 'string',
-                    'KeyType': 'HASH' | 'RANGE'
-                },
-            ],
-            'Projection': {
-                'ProjectionType': 'ALL' | 'KEYS_ONLY' | 'INCLUDE',
-                'NonKeyAttributes': [
-                    'string',
-                ]
-            }
-        },
-    ],
+    # LocalSecondaryIndexes=[
+    #     {
+    #         'IndexName': 'string',
+    #         'KeySchema': [
+    #             {
+    #                 'AttributeName': 'string',
+    #                 'KeyType': 'HASH' | 'RANGE'
+    #             },
+    #         ],
+    #         'Projection': {
+    #             'ProjectionType': 'ALL' | 'KEYS_ONLY' | 'INCLUDE',
+    #             'NonKeyAttributes': [
+    #                 'string',
+    #             ]
+    #         }
+    #     },
+    # ],
     # GlobalSecondaryIndexes=[
     #     {
     #         'IndexName': 'string',
@@ -98,4 +97,4 @@ response = ddb.create_table(
     # DeletionProtectionEnabled=True | False
 )
 
-print(respsonse)
+print(response)

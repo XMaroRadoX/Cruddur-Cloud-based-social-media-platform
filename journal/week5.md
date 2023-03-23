@@ -6,7 +6,7 @@
 ### Watching the livestream
 
   [LINK to Diagram](https://lucid.app/lucidchart/8f58a19d-3821-4529-920f-5bb802d6c6a3/edit?invitationId=inv_e47bc316-9caa-4aee-940f-161e01e22715&page=0_0#)
-  ![](assets/week5/)
+  ![](assets/week5/lucid_chart_dynamo_db.png)
 
 Table Design:
 
@@ -32,4 +32,8 @@ WRU (Write Request Units) and RCU (Read Capacity Units) are units of measurement
 A single RCU represents one strongly consistent read per second or two eventually consistent reads per second, with each read operation accessing an item of up to 4 KB. Similarly, a single WRU represents one write operation per second, with each write operation adding an item of up to 1 KB in size. If the size of the item exceeds the specified limit, additional RCU or WRU are consumed accordingly.
 
 When performing read or write operations, DynamoDB consumes the corresponding RCU or WRU for that operation. If the number of requests exceeds the provisioned capacity, additional requests are throttled and must be retried later. To avoid throttling, it's important to provision enough RCU and WRU for your DynamoDB table.
-  
+
+
+### Watching DynamoDb utility scripts video
+
+![](assets/week5/created_ddb_table.png)

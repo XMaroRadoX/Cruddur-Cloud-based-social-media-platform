@@ -1,5 +1,5 @@
 #! /usr/bin/bash
--e # Stop if it failes at any point during program execution
+set -e # Stop if it failes at any point during program execution
 
 CYAN='\033[1;36m'
 NO_COLOR='\033[0m'
