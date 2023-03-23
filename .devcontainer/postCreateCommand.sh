@@ -29,4 +29,4 @@ LABEL="Connect To RDS"
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
 export LOCAL_IP=$(curl ifconfig.me)
 cd /workspaces/aws-bootcamp-cruddur-2023/backend-flask
-source "./bin/rds/rds-update-sg-rule"
+bash "./bin/rds/rds-update-sg-rule"
