@@ -28,4 +28,5 @@ pip install -r requirements.txt
 LABEL="Connect To RDS"
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
 export CODESPACES_IP=$(curl ifconfig.me)
-source "$PWD/backend-flask/bin/rds-update-sg-rule-codespaces"
+cd /workspaces/aws-bootcamp-cruddur-2023/backend-flask
+bash "/bin/rds-update-sg-rule-codespaces"
