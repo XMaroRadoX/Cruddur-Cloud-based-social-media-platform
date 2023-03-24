@@ -2,7 +2,7 @@
   display: flex;
   align-items: start;
   overflow: hidden;
-  border-bottom: solid 1px var(--separtor-color);
+  border-bottom: solid 1px rgb(31,36,49);
   padding: 16px;
   cursor: pointer;
   text-decoration: none;
