@@ -24,8 +24,7 @@ export default function ActivityForm(props) {
         json.handle = params.handle
       } else {
         json.message_group_uuid = params.message_group_uuid
-      }
-
+      }      
       const res = await fetch(backend_url, {
         method: "POST",
         headers: {
