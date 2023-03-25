@@ -36,4 +36,8 @@ When performing read or write operations, DynamoDB consumes the corresponding RC
 
 ### Watching DynamoDb utility scripts video
 
+created ddb table
+
 ![](assets/week5/created_ddb_table.png)
+
+### DynamoDB screenshots

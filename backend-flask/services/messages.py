@@ -4,6 +4,8 @@ from lib.db import db
 
 class Messages:
   def run(message_group_uuid,cognito_user_id):
+    print("__________21312_____________214124_____________214124________________1241231______________3212312_________")
+    print(message_group_uuid,cognito_user_id)
     model = {
       'errors': None,
       'data': None

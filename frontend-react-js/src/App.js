@@ -42,25 +42,23 @@ const router = createBrowserRouter([
     element: <HomeFeedPage />
   },
   {
-    path: "/@:handle",
-    element: <UserFeedPage />
-  }, {
     path: "/notifications",
     element: <NotificationsFeedPage />
   },
   {
+    path: "/@:handle",
+    element: <UserFeedPage />
+  },
+  {
     path: "/messages",
     element: <MessageGroupsPage />
-  },{
-      path: "/messages/new/:handle",
+  },
+  {
+    path: "/messages/new/:handle",
     element: <MessageGroupNewPage />
   },
   {
     path: "/messages/:message_group_uuid",
-        element: <MessageGroupPage />
-  },
-  {
-    path: "/messages/@:handle",
     element: <MessageGroupPage />
   },
   {
