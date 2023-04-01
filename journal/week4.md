@@ -12,7 +12,7 @@
 
 * Archeticture for what we are doing this week 
   
-![](assets/week4/Diagram_for_archeticture.pn)
+![](assets/week4/Diagram_for_archeticture.png)
 
 * side note : noting down and working at the same time is hard hahaha 😆
 
