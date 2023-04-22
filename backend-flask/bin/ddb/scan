@@ -3,7 +3,7 @@ import boto3
 import sys
 
 attrs = {
-    'endpoint_url': 'http://localhost:8000'
+    'endpoint_url': 'https://dynamodb.us-east-1.amazonaws.com'
 }
 # unset endpoint url for use with production database
 # if len(sys.argv) == 2:

@@ -1,0 +1,267 @@
+Update gitpod config
+Update week4.md
+Watched Security Video
+Correct Messaging Files
+📄 docs: Added Diagram
+📄 docs: Added Diagram
+📄 docs: Open Up the cloud Task done
+✨feature: Messaging Works yaaaaay
+✨feature: DynamoDB working
+✨feature: Added Messaging services
+Implementing DynamoDb
+chore: update .gitignore and launch.json
+update app.py, message_groups.py and messages.py
+✨feature: Updated Message Components and pages to support dynamodb
+refactor: :recycle: Made Authentication a seperate entity
+refactor: :recycle: Made Authentication a seprate entiity
+✨feature: Added ENDPOINT for dynamo db
+feat: :sparkles: Make Profile section map to your profile
+feat: :hammer: added dynamo db utilities
+feat: :seedling: added cognito file
+refactor: :recycle: Code is prettier
+refactor: :wrench: Updated Config files
+✨feature: Dynamo DB scripts
+fixed  wrong function
+fixed missing indent
+done with basic utilities
+Reorgainezed DB files and added ddb
+refactor: :art: Restructuring of bash commands
+adapting to local env
+chore: :lipstick: fixed bad directory
+Updated Container with new envars
+fix: :bug: changed docker compose to adapt for local environment
+Moved To Local CDE
+ Rename docker-compose codespaces.yaml to docker-compose-codespaces.yaml
+ Update docker-compose codespaces.yaml
+ Update HomeFeedPage.js
+ Update postCreateCommand.sh
+ Merge pull request #7 from XMaroRadoX/codespace-xmaroradox-redesigned-chainsaw-xx6r5r65r5qf6q6g
+ Pending changes exported from your codespace
+ fixed missing tab
+ fixes to codespaces
+ Merge pull request #6 from XMaroRadoX/codespace-xmaroradox-redesigned-space-succotash-464qjq4jg9p37p4v
+ Pending changes exported from your codespace
+ Merge pull request #5 from XMaroRadoX/codespace-xmaroradox-redesigned-space-succotash-464qjq4jg9p37p4v
+ Pending changes exported from your codespace
+ Testing DB again
+ update devcontainer
+ fixed bad runs
+ trying to fix db
+ trying to fix db
+ fixed file naming
+ fixed file naming
+ updated cde
+ change handles but it isn't working
+ fixed wrong command
+ updated .devcontainer to work with RDS
+ edited docker compose to fix cors issue
+ 🤖 TEST: implmented database but there is still a problem
+ implemented DB Class
+ done db setup
+ Did Cognito Post Confirmation Lambda
+ Setup Codespaces
+ Connected to the production database
+ Update Sg Rule to make gitpod match
+ Made Queries Work
+ sessions database
+ update replies section css
+ setup codespaces
+ Setup postgres - Finished Live Stream week 4
+ made the 3 files for db scripts
+ mid of live stream
+ updated readme for week3
+ added the new ui to the readme
+ changed the UI yaaaaaaay
+ added notes
+ Setup clear jwt token
+ fixed Signout Button
+ done cognto JWT server side
+ fixed Error with keys
+ in the mid of  the jwt token task
+ Setup Recovery
+ Update envars and integrate sign up and sign in and confirmation
+ created my user
+ Halfway-cognito Implemented
+ Integrate cognito
+ Created The User Pool
+ Correctly Instrumented X-ray
+ fixed namings
+ Fully implemented Rollbar
+ add rollbar
+ Done open in the cloud homework and updated my previous readmes
+ Implemented Cloudwatch Logs
+ Added segments and subsegments
+ Instrumented X-ray
+ setup xray daemon
+ set x-ray
+ added an extension
+ made x-ray.json
+ add npm i to gitpod.yml
+ add npm i to frontend
+ added spans
+ console tracing
+ Opened Ports
+ Instrument Honeycomb
+ Installed requirments for opentelemtry
+ Added HealthCheck
+ Extendend Homework
+ add gitignore
+ install docker and postgres
+ Done Notifications Page
+ Created Notifications Endpoint
+ Update the Open-api to add notfiications
+ Watched the security video week2
+ Finished the LiveStream
+ Added dockerfile debugging configuration
+
+
+
+git tag -f week-00 19c5229
+
+
+git tag week-00 
+git tag week-01
+git tag week-02
+git tag week-03
+git tag week-04
+git tag week-05
+git tag week-0607
+git tag week-08
+git tag week-09
+git tag week-10
+git tag week-11
+git tag week-12
+git tag week-13
+git tag week-14
+
+
+git tag week-05 a0f4d31 
+git tag week-05 6ba4b8e 
+git tag week-05 d48646d 
+git tag week-05 544f758 
+git tag week-05 3eb3218 
+git tag week-05 0790311 
+git tag week-05 eb0c230 
+git tag week-05 0d10ed7 
+git tag week-05 f13adb1 
+git tag week-05 8caccb3 
+git tag week-05 d167700 
+git tag week-05 3a4bd69 
+git tag week-05 1c65192 
+git tag week-05 3b9c308 
+git tag week-05 3fbfbd9 
+git tag week-05 af15b9d 
+git tag week-05 512cccd 
+git tag week-05 9cf7f3a 
+git tag week-05 118c0b4 
+git tag week-05 6366add 
+git tag week-05 b36feeb 
+git tag week-05 306f7dd 
+git tag week-05 ebe4720 
+git tag week-05 d77ccc2 
+git tag week-05 e5a5eb3 
+git tag week-05 5a584a7 
+git tag week-05 fc33c4a 
+git tag week-05 72b105b 
+git tag week-05 c068772 
+git tag week-05 e17fb5f 
+git tag week-05 8420ca7 
+git tag week-05 e5c204c 
+git tag week-05 dee3277 
+git tag week-04 afd0c00
+git tag week-04 bb518ed
+git tag week-04 9589c9a
+git tag week-04 91319a7
+git tag week-04 c791f1a
+git tag week-04 5a7edfa
+git tag week-04 392b5fa
+git tag week-04 40a1dee
+git tag week-04 339d2db
+git tag week-04 5ebb420
+git tag week-04 0ce5c10
+git tag week-04 3c3a1a4
+git tag week-04 99e64b3
+git tag week-04 920145d
+git tag week-04 e6db4ae
+git tag week-04 02bcaf6
+git tag week-04 3debc36
+git tag week-04 fa0b038
+git tag week-04 a1e4157
+git tag week-04 d4ad741
+git tag week-04 69a1d40
+git tag week-04 41bc9e6
+git tag week-04 7d724a6
+git tag week-04 af30d4c
+git tag week-04 2f090c2
+git tag week-04 d8ce2f8
+git tag week-04 c0ccb25
+git tag week-04 d42ef22
+git tag week-04 0c11c71
+git tag week-04 4814fca
+git tag week-04 7d15414
+git tag week-04 9f04baa
+git tag week-04 60c60ff
+git tag week-04 a912dc2
+git tag week-04 246e133
+git tag week-04 62e5f7f
+git tag week-04 0fa1e08
+git tag week-04 4d87e95
+git tag week-03 c841ba2
+git tag week-03 fa7d3e2
+git tag week-03 09953ff
+git tag week-03 64ae4ba
+git tag week-03 f1644bb
+git tag week-03 c091072
+git tag week-03 01126e9
+git tag week-03 7bcd6b0
+git tag week-03 929689a
+git tag week-03 96581d2
+git tag week-03 a543203
+git tag week-03 9893358
+git tag week-03 b3e51dc
+git tag week-03 945736e
+git tag week-03 e4f7932
+git tag week-02 193f61c
+git tag week-02 dd805f8
+git tag week-02 8afc0d4
+git tag week-02 cf52e87
+git tag week-02 690cca7
+git tag week-02 fdacd03
+git tag week-02 6f309f3
+git tag week-02 9108a1a
+git tag week-02 568dee6
+git tag week-02 7b6cb52
+git tag week-02 8d65e05
+git tag week-02 ba095d4
+git tag week-02 03e6a3d
+git tag week-02 181d9b2
+git tag week-02 5c7f61e
+git tag week-02 48eed1e
+git tag week-02 a4e0398
+git tag week-02 d213ba9
+git tag week-02 f62dbd6
+git tag week-01 a8c2389
+git tag week-01 571096c
+git tag week-01 46121d9
+git tag week-01 3755a3d
+git tag week-01 4faf82c
+git tag week-01 6b87cbe
+git tag week-01 f04b868
+git tag week-01 91affde
+git tag week-01 ecafe3d
+git tag week-01 2cd2840
+git tag week-00 bba42d5
+git tag week-00 b2668c2
+git tag week-00 df09567 
+git tag week-00 f3d7eb6 
+git tag week-00 f910012 
+git tag week-00 d318ff1 
+git tag week-00 c0e4747 
+git tag week-00 38cd9c8 
+git tag week-00 658601e 
+git tag week-00 0001689 
+git tag week-00 7d5955d 
+git checkout 19c5229
+git tag week-00 
+
+

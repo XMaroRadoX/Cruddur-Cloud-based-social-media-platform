@@ -6,7 +6,7 @@ import json
 import datetime
 
 attrs = {
-    'endpoint_url': 'http://localhost:8000'
+    'endpoint_url': 'https://dynamodb.us-east-1.amazonaws.com'
 }
 
 if len(sys.argv) == 2:
