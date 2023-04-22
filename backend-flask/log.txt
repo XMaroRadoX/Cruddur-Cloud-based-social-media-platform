@@ -264,4 +264,15 @@ git tag week-00 7d5955d
 git checkout 19c5229
 git tag week-00 
 
-
+git checkout bba42d5
+git tag week-00 bba42d5
+git checkout a8c2389
+git tag week-01 a8c2389
+git checkout 193f61c
+git tag week-02 193f61c
+git checkout c841ba2
+git tag week-03 c841ba2
+git checkout afd0c00
+git tag week-04 afd0c00
+git checkout a0f4d31
+git tag week-05 a0f4d31 
