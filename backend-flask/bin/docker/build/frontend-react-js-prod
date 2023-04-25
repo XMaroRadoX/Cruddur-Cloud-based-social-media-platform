@@ -1,0 +1,11 @@
+#! /usr/bin/bash
+
+  docker build \
+--build-arg REACT_APP_BACKEND_URL="api.marorado.com" \
+--build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_USER_POOLS_ID="us-east-1_Tgl54awoA" \
+--build-arg REACT_APP_CLIENT_ID="1iueeravlc3f3q6blhe6oo9u53" \
+-t frontend-react-js \
+-f Dockerfile.prod \
+.

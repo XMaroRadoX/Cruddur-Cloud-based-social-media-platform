@@ -124,3 +124,4 @@ https://scribehow.com/shared/Setting_Up_Frontend__gN3MhDp9RGqV81KAvwhVUA
 https://scribehow.com/shared/frontend_setup_part_2__R-l5FMkTSR6TPx4Q1zdtfw
 https://scribehow.com/shared/setting_up_frontend_part_3__skkSQPRaThiShyHDXaAc6Q
 https://scribehow.com/shared/How_to_update_connection_URL_for_backend_Flask__WElRQ2HJT3u7vCUMfXvtQQ
+https://scribehow.com/shared/How_to_Deploy_a_Dockerized_Flask_Application__Am3kJhiURQCk633eeLRRdA

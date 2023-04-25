@@ -44,8 +44,8 @@
           {"name": "OTEL_EXPORTER_OTLP_ENDPOINT", "value": "https://api.honeycomb.io"},
           {"name": "AWS_COGNITO_USER_POOL_ID", "value": "us-east-1_Tgl54awoA"},
           {"name": "AWS_COGNITO_USER_POOL_CLIENT_ID", "value": "1iueeravlc3f3q6blhe6oo9u53"},
-          {"name": "FRONTEND_URL", "value": "*"},
-          {"name": "BACKEND_URL", "value": "*"},
+          {"name": "FRONTEND_URL", "value": "https://marorado.com"},
+          {"name": "BACKEND_URL", "value": "https://api.marorado.com"},
           {"name": "AWS_DEFAULT_REGION", "value": "us-east-1"}
         ],
         "secrets": [
