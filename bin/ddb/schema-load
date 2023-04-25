@@ -3,6 +3,8 @@
 import boto3
 import sys
 
+
+
 attrs = {
   'endpoint_url': 'https://dynamodb.us-east-1.amazonaws.com'
 }
