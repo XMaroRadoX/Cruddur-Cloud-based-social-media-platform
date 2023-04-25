@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM 742400803957.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
 
 # going Inside Container
 # mkdir a new folder inside the container or not I guess it's setting the directory to backend-flask
@@ -14,7 +14,7 @@ COPY . .
 
 #Setting environment Variables
 # Remain set in the container
-ENV FLASK_ENV=development
+ENV FLASK_DEBUG=1
 
 EXPOSE ${PORT}
 # python3 -m flask run --host=0.0.0.0 --port=4567

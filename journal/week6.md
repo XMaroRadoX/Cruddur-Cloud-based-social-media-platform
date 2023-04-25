@@ -97,3 +97,26 @@ APIs or GitOps to pull information for troubleshooting
 • Amazon CloudWatch to monitor Malicious ECS Configuration Changes
 • Only using Authorized Container Images (hopefully some image signing
 in the future e.g sigstore)
+
+# Watching the Live Stream
+
+* Added Healthcheck for rds
+* Added Health check for the backend
+* Created a docker repo
+* Pushed Image to registry
+* Added task definition (maybe should bump the cpu or memory later)
+* Added service exeuction policy
+* Created Parameters
+  
+   ![](assets/week6/paramter_store.png)
+
+* Create Role
+   
+   ![](assets/week6/createrole.png)
+
+* created service
+* setup loadbalancer
+my step by step :
+
+
+https://scribehow.com/shared/ECS_FARGATE_BACKEND_SETUP__sxhC78mcSvm2D6l-AvN62A

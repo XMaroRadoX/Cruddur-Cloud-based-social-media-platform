@@ -5,3 +5,12 @@ gh secret set NAME -b VALUE -r REPO_OWNER/REPO_NAME -u
 
  chmod u+x ./bin/ddb/*
  chmod u+x ./bin/db/*
+
+
+ aws ecs execute-command  \
+--region $AWS_DEFAULT_REGION \
+--cluster cruddur \
+--task arn:aws:ecs:us-east-1:742400803957:task/cruddur/5f2e5654be35436197a10a618b7e3192 \
+--container backend-flask \
+--command "/bin/bash" \
+--interactive

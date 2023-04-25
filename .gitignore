@@ -5,3 +5,4 @@ node_modules
 temp
 .vscode
 log.txt
+front-react-js/build/*
