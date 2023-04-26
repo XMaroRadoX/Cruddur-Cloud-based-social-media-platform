@@ -129,3 +129,6 @@ https://scribehow.com/shared/How_to_Deploy_a_Dockerized_Flask_Application__Am3kJ
 
 changed domain to cruddur.marorado.com 
 https://scribehow.com/shared/How_to_Deploy_a_React-Flask_Web_Application__LL5MK1HLRKasgfIzx59DKw
+
+Fixing Acess Token
+https://scribehow.com/shared/Fixing_Access_Token__SJYNnNzxRuCCe5YO6-KSkg
