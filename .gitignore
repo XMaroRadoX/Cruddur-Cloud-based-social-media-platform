@@ -6,3 +6,4 @@ temp
 .vscode
 log.txt
 frontend-react-js/build/*
+*.env

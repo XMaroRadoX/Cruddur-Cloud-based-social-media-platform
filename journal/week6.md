@@ -132,3 +132,7 @@ https://scribehow.com/shared/How_to_Deploy_a_React-Flask_Web_Application__LL5MK1
 
 Fixing Acess Token
 https://scribehow.com/shared/Fixing_Access_Token__SJYNnNzxRuCCe5YO6-KSkg
+
+Configuring Container Insights:
+https://scribehow.com/shared/Configuring_Containeer_Insights__6iyQT_S0RyW_2iHstjy-Eg
+https://scribehow.com/shared/How_to_configure_for_Container_Insights_using_Fargate__gSb2AUykRfGf2G0zCc0BKw
