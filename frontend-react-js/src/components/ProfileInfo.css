@@ -9,7 +9,7 @@
 .profile-info {
   display: flex;
   gap: 12px;
-  border-radius: 999px;
+  border-radius: 20px;
   padding: 12px;
   margin-top: 12px;
   align-items: center;

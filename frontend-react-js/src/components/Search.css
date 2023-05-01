@@ -1,14 +1,14 @@
 @import url(../index.css);
 .search_field input[type='text'] {
-  border: solid 2px rgba(255,255,255,0.1);
   background: var(--tileground-color);
-  padding: 16px;
-  font-size: 16px;
+  border: 2px solid #c471ff;
   border-radius: 14px;
-  width: 100%;
-  outline: none;
   color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding: 16px;
+  width: 100%;
 }
 .search_field input[type='text']:focus {
-  border: solid 1px var(--separtor-color);
+  border: 2px solid #c471ff;;
 }
