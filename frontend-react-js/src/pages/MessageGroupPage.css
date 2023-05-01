@@ -1,9 +1,27 @@
 .messages.content {
   display: flex;
   flex-direction: column;
+  /* padding: 20px; */
+  margin-left: 10px;
 }
 
 .message_feed {
   flex-grow: 1;
   overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c471ff;
+  border-radius: 999px;
 }

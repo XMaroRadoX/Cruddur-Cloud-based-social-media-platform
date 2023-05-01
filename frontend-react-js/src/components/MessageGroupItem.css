@@ -7,11 +7,17 @@
   text-decoration: none;
 }
 .message_group_item:hover {
-background: rgba(255,255,255,0.08)
+background: rgba(255,255,255,0.08);
+border-radius: 20px;
 }
 
 .message_group_item.active {
-background: rgba(255,255,255,0.08)
+background: rgba(255,255,255,0.08);
+border-radius: 20px;
+}
+.message_group_item.active, .message_group_item:hover {
+  background: hsla(0,0%,100%,.08);
+  border-radius: 20px;
 }
 
 .message_group_item:last-child {

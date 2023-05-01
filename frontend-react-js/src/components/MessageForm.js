@@ -66,7 +66,7 @@ export default function ActivityForm(props) {
     >
       <textarea
         type="text"
-        placeholder="send a direct message..."
+        placeholder="Send a direct message..."
         value={message}
         onChange={textarea_onchange} 
       />
