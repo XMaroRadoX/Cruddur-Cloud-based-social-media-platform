@@ -5,6 +5,8 @@
   padding: 16px;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 4px;
+  margin-right: 10px;
 }
 .message_group_item:hover {
 background: rgba(255,255,255,0.08);
