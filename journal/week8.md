@@ -45,3 +45,11 @@ Route53.
 • Ensure Root Domain Alias Record Points to ELB
 • Develop process for continuously verifying if DNS (& Hosted Zone)
 all current and valid.
+
+
+### LIVE STREAM WEEK 8
+CDK IS SIMILAR TO A CLOUDFORMATION TEMPLATE
+cloud formation you define you structure in json or yaml 
+cdk uses progamming languages intstead of json or yaml
+cdk is open source
+you use constructs are like objects you use to build your instructure
