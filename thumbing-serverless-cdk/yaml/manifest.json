@@ -1,0 +1,118 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "ThumbingServerlessCdkStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ThumbingServerlessCdkStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ThumbingServerlessCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ThumbingServerlessCdkStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/93e698fc91d5e1b4c9d7747267a4c1f9fe88595bcec3fe6ab54fb19878945d6b.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ThumbingServerlessCdkStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "ThumbingServerlessCdkStack.assets"
+      ],
+      "metadata": {
+        "/ThumbingServerlessCdkStack/ThumbingBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ThumbingBucket715A2537"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/ThumbingBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ThumbingBucketNotificationsD357640C"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/ThumbingBucket/AllowBucketNotificationsToThumbingServerlessCdkStackThumbLambdaF947A79C": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ThumbingBucketAllowBucketNotificationsToThumbingServerlessCdkStackThumbLambdaF947A79C0FE98400"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/ThumbLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ThumbLambdaServiceRole4BE4E3E0"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/ThumbLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ThumbLambda5C775138"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ThumbingServerlessCdkStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ThumbingServerlessCdkStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
