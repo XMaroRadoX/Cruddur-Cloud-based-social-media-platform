@@ -53,3 +53,5 @@ cloud formation you define you structure in json or yaml
 cdk uses progamming languages intstead of json or yaml
 cdk is open source
 you use constructs are like objects you use to build your instructure
+
+
