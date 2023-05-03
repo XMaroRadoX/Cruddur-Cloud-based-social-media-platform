@@ -30,3 +30,18 @@ printf "${CYAN}${LABEL}${NO_COLOR}\n"
 export LOCAL_IP=$(curl ifconfig.me)
 cd /workspaces/aws-bootcamp-cruddur-2023/backend-flask
 bash "./bin/rds/rds-update-sg-rule"
+
+# FARGATE
+LABEL="Connect To FARGATE"
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
+sudo dpkg -i session-manager-plugin.deb
+cd backend-flask
+
+# CDK
+LABEL="Connect To CDK"
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+npm install aws-cdk -g
+cd thumbing-serverless-cdk
+cp .env.example .env
+npm i
