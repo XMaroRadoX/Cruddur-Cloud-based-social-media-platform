@@ -1,6 +1,6 @@
 # Week 8 — Serverless Image Processing
 
-
+![](assets/week8/week8-archeticture.png)
 Live Stream notes :
 single process per a single container
 use case for bridge mode 

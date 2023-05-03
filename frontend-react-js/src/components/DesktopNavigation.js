@@ -29,14 +29,11 @@ export default function DesktopNavigation(props) {
         active={props.active}
       />
     );
-    profileLink = (
-      <DesktopNavigationLink
-        url={`/@${props.user.handle}`}
-        name="Profile"
-        handle="profile"
-        active={props.active}
-      />
-    );
+    profileLink = <DesktopNavigationLink 
+    url={"/@" + props.user.handle}
+    name="Profile"
+    handle="profile"
+    active={props.active} />
   }
 
   return (

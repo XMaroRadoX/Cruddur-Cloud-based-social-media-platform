@@ -41,7 +41,13 @@ cd backend-flask
 # CDK
 LABEL="Connect To CDK"
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
-npm install aws-cdk -g
+sudo npm install aws-cdk -g
 cd thumbing-serverless-cdk
 cp .env.example .env
 npm i
+cd ..
+
+# CDK
+LABEL="BootStraping "
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+bin/bootstrap

@@ -8,13 +8,16 @@ WORKDIR /backend-flask
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-
-# moving everything out of the container into it
+# Outside Container -> Inside Container
+# . means everything in the current directory
+# first period . - /backend-flask (outside container)
+# second period . /backend-flask (inside container)
 COPY . .
 
-#Setting environment Variables
-# Remain set in the container
-
 EXPOSE ${PORT}
+
+ENV PYTHONUNBUFFERED=1
+
+# CMD (Command)
 # python3 -m flask run --host=0.0.0.0 --port=4567
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567", "--debug"]
