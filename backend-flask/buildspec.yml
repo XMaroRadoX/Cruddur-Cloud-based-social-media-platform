@@ -28,7 +28,7 @@ env:
     CONTAINER_NAME: backend-flask
     IMAGE_URL: 742400803957.dkr.ecr.ca-central-1.amazonaws.com
     REPO_NAME: backend-flask:latest
-
+    AWS_DEFAULT_REGION: us-east-1
 artifacts:
   files:
     - imagedefinitions.json
