@@ -11,7 +11,7 @@ form.profile_form textarea {
   width: 100%;
   padding: 16px;
   border: solid 1px var(--field-border);
-  background: var(--field-bg);
+  background: #1c1c1c;
   color: #fff;
 }
 
@@ -42,9 +42,9 @@ form.profile_form textarea:focus {
   font-weight: 800;
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  background: rgba(149,0,255,1);
+  background: #c471ff;
   color: #fff;
 }

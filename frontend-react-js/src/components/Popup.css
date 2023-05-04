@@ -9,27 +9,58 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 48px;
-  background: rgba(255,255,255,0.1)
+  padding-top: 105px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(3px);
 }
 
 .popup_form {
   background: #000;
-  box-shadow: 0px 0px 6px rgba(190, 9, 190, 0.6);
-  border-radius: 16px;
+  /* box-shadow: 0px 0px 6px rgba(190, 9, 190, 0.6); */
+  border-radius: 20px;
   width: 600px;
+  /* border: solid 6px rgb(110 110 110); */
 }
 
 .popup_form .popup_heading {
   display: flex;
   flex-direction: row;
-  border-bottom: solid 1px rgba(255,255,255,0.4);
+  border-bottom: solid 4px #c471ff;
   padding: 16px;
 }
 
 .popup_form .popup_heading .popup_title{
   flex-grow: 1;
   color: rgb(255,255,255);
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: 800;
 
+}
+.popup_content button[type='file'] {
+  font-weight: 800;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #c471ff;
+  color: #fff;
+}
+input[type="file"] {
+  margin-top: 15px;
+  border: solid 3px #c471ff;
+  background: #1c1c1c;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input::file-selector-button  {
+  font-weight: thick;
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+  border: solid 0px rgb(0, 0, 0);
+  border-radius: 3px;
+  background: #1c1c1c;
 }

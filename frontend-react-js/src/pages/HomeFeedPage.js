@@ -56,7 +56,8 @@ export default function HomeFeedPage() {
         <ActivityForm  
           popped={popped}
           setPopped={setPopped} 
-          setActivities={setActivities} 
+          setActivities={setActivities}
+          user={user} 
         />
         <ReplyForm 
           activity={replyActivity} 

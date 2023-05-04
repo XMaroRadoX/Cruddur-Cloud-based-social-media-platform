@@ -59,3 +59,24 @@ docker run -rm \
       curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
       sudo dpkg -i session-manager-plugin.deb
       cd backend-flask
+
+
+
+      gh secret set UPLOADS_BUCKET_NAME -b mk-cruddur-uploaded-avatars -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set ASSETS_BUCKET_NAME -b cruddur-assets.marorado.com -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set THUMBING_S3_FOLDER_INPUT -b  -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set THUMBING_S3_FOLDER_OUTPUT -b avatars -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set THUMBING_WEBHOOK_URL -b https://cruddur-api.marorado.com/webhooks/avatar -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set NAME -b VALUE -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+      gh secret set NAME -b VALUE -r XMaroRadoX/aws-bootcamp-cruddur-2023 -u
+
+      
+
+      UPLOADS_BUCKET_NAME="mk-cruddur-uploaded-avatars"
+ASSETS_BUCKET_NAME="cruddur-assets.marorado.com"
+
+THUMBING_S3_FOLDER_INPUT=""
+THUMBING_S3_FOLDER_OUTPUT="avatars"
+THUMBING_WEBHOOK_URL="https://cruddur-api.marorado.com/webhooks/avatar"
+THUMBING_TOPIC_NAME="cruddur-assets"
+THUMBING_FUNCTION_PATH="/workspaces/aws-bootcamp-cruddur-2023/aws/lambdas/process-images"
