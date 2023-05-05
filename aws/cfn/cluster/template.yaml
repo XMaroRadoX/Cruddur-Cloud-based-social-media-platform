@@ -158,7 +158,7 @@ Resources:
         - Field: host-header
           HostHeaderConfig: 
             Values: 
-              - api.cruddur.com
+              - cruddur-api.marorado.com
       Actions: 
         - Type: forward
           TargetGroupArn:  !Ref BackendTG

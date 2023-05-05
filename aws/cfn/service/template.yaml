@@ -43,10 +43,10 @@ Parameters:
     Default: https://api.honeycomb.io
   EnvAWSCognitoUserPoolId:
     Type: String
-    Default: us-east-1_CQ4wDfnwc
+    Default: us-east-1_Tgl54awoA
   EnvCognitoUserPoolClientId:
     Type: String
-    Default: 5b6ro31g97urk767adrbrdj1g5
+    Default: 1iueeravlc3f3q6blhe6oo9u53
   EnvFrontendUrl:
     Type: String
     Default: "*"
@@ -103,7 +103,7 @@ Resources:
       LaunchType: FARGATE
       LoadBalancers:
       # TODO - UPDATE THIS
-        - TargetGroupArn: 'arn:aws:elasticloadbalancing:us-east-1:742400803957:targetgroup/cruddur-backend-flask-tg/87ed2a3daf2d2b1d'
+        - TargetGroupArn: 'arn:aws:elasticloadbalancing:us-east-1:742400803957:targetgroup/cruddur-backend-flask-tg/135df9276c1839d2'
           ContainerName: 'backend-flask'
           ContainerPort: !Ref ContainerPort
       NetworkConfiguration:
