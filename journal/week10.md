@@ -1,3 +1,3 @@
 # Week 10 — CloudFormation Part 1
 
-CHECK NETWORK DIAGRAM WHEN UPDATING THIS
+CHECK NETWORK DIAGRAM In assets folder
