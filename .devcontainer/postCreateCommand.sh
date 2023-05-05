@@ -51,3 +51,10 @@ cd ..
 LABEL="BootStraping "
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
 bin/bootstrap
+
+#CLOUDFRONT
+LABEL="CLOUDFRONT DEPENDENCIES "
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+pip install cfn-lint
+sudo cargo install cfn-guard
+sudo gem install cfn-toml
