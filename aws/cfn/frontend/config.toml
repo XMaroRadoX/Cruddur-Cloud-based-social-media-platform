@@ -1,8 +1,9 @@
 [deploy]
 bucket = 'mk-cruddur-cfn-artifacts'
 region = 'us-east-1'
-stack_name = 'CrdCluster'
+stack_name = 'CrdFrontend'
 
 [parameters]
 CertificateArn = 'arn:aws:acm:us-east-1:742400803957:certificate/e4c7a73f-eca2-453a-959c-f545addfc877'
-NetworkingStack = 'CrdNet'
+WwwBucketName = 'wwwcruddur.marorado.com'
+RootBucketName = 'cruddur.marorado.com'

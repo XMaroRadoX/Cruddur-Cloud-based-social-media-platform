@@ -1,9 +1,12 @@
 docker/**/*
 scarthpad
 node_modules
-node_modules
 temp
 .vscode
 log.txt
 frontend-react-js/build/*
 *.env
+docker/**/*
+.aws-sam
+build.toml
+tmp/*
