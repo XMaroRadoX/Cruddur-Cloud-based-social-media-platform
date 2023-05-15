@@ -59,3 +59,4 @@ sudo pip install cfn-lint
 sudo apt install cargo
 sudo cargo install cfn-guard
 sudo gem install cfn-toml
+sudo pip install aws-sam-cli
