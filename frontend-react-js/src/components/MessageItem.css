@@ -1,5 +1,5 @@
 .message_item {
-    align-items: start;
+    align-items: flex-start;
     cursor: pointer;
     display: flex;
     overflow: hidden;

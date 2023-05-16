@@ -55,6 +55,7 @@ bin/bootstrap
 #CLOUDFRONT
 LABEL="CLOUDFRONT DEPENDENCIES "
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
+sudo bundle update --bundler
 sudo pip install cfn-lint
 sudo apt install cargo
 sudo cargo install cfn-guard
