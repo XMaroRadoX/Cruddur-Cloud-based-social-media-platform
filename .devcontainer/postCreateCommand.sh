@@ -61,3 +61,4 @@ sudo apt install cargo
 sudo cargo install cfn-guard
 sudo gem install cfn-toml
 sudo pip install aws-sam-cli
+sudo gem install aws_s3_website_sync

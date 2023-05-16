@@ -20,13 +20,16 @@ export default function DesktopNavigationLink(props) {
         return <HomeIcon className='icon' />
       case 'notifications':
         return <NotificationsIcon className='icon' />
+
       case 'profile':
         return <ProfileIcon className='icon' />
+
       case 'more':
         return <MoreIcon className='icon' />
+
       case 'messages':
         return <MessagesIcon className='icon' />
-      default: 
+      default:
         break;
     }
   }
