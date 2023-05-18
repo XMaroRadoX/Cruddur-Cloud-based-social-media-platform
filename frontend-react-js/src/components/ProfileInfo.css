@@ -58,9 +58,10 @@
 .profile-dialog {
   background: #000;
   box-shadow: 0px 0px 4px rgba(255,255,255,0.6);
-  border-radius: 8px;
+  border-radius: 16px;
   min-height: 60px;
   z-index: 3;
+  translate: 200px 15px;
   position: absolute;
   min-width: 240px;
   bottom: 70px;
