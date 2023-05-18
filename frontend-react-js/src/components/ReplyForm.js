@@ -56,20 +56,19 @@ export default function ReplyForm(props) {
     setMessage(event.target.value);
   }
 
-  const close = ()=> {
-    console.log('close')
-    //props.setPopped(false)
-  }
-
   let content;
   if (props.activity){
     content = <ActivityContent activity={props.activity} />;
   }
 
-
+  const close = (event)=> {
+    if (event.target.classList.contains("reply_popup")) {
+      props.setPopped(false)
+    }
+  }
   if (props.popped === true) {
     return (
-      <div className="popup_form_wrap" onClick={close}>
+      <div className="popup_form_wrap reply_popup" onClick={close}>
         <div className="popup_form">
           <div className="popup_heading">
           </div>
