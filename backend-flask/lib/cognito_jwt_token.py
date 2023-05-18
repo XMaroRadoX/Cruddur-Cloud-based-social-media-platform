@@ -1,27 +1,24 @@
-HTTP_HEADER = "Authorization"
-
 import time
 import requests
 from jose import jwk, jwt
 from jose.exceptions import JOSEError
 from jose.utils import base64url_decode
-from flask_awscognito.exceptions import FlaskAWSCognitoError, TokenVerifyError
-class FlaskAWSCognitoError(Exception):
-    pass
+from functools import wraps, partial
+from flask import request, g
+import os
 
+class FlaskAWSCognitoError(Exception):
+  pass
 
 class TokenVerifyError(Exception):
-    pass
-
-
+  pass
 
 def extract_access_token(request_headers):
     access_token = None
-    auth_header = request_headers.get(HTTP_HEADER)
+    auth_header = request_headers.get("Authorization")
     if auth_header and " " in auth_header:
         _, access_token = auth_header.split()
     return access_token
-
 
 class CognitoJwtToken:
     def __init__(self, user_pool_id, user_pool_client_id, region, request_client=None):
@@ -116,5 +113,32 @@ class CognitoJwtToken:
         self._check_expiration(claims, current_time)
         self._check_audience(claims)
 
-        self.claims = claims
+        self.claims = claims 
         return claims
+
+from functools import wraps, partial
+
+def jwt_required(f=None, on_error=None):
+    if f is None:
+        return partial(jwt_required, on_error=on_error)
+
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        cognito_jwt_token = CognitoJwtToken(
+            user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"), 
+            user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"),
+            region=os.getenv("AWS_DEFAULT_REGION")
+        )
+        access_token = extract_access_token(request.headers)
+        try:
+            claims = cognito_jwt_token.verify(access_token)
+            # is this a bad idea using a global?
+            g.cognito_user_id = claims['sub']  # storing the user_id in the global g object
+        except TokenVerifyError as e:
+            # unauthenticated request
+            app.logger.debug(e)
+            if on_error:
+                on_error(e)
+            return {}, 401
+        return f(*args, **kwargs)
+    return decorated_function
