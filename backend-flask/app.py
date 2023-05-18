@@ -142,7 +142,6 @@ def health_check():
 @app.route("/api/message_groups", methods=['GET'])
 @jwt_required()
 def data_message_groups():
-    access_token = extract_access_token(request.headers)
     model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
     if model['errors'] is not None:
         return model['errors'], 422
@@ -196,14 +195,14 @@ def default_home_feed(e):
   # unauthenicatied request
   app.logger.debug(e)
   app.logger.debug("unauthenicated")
-  data = HomeActivities.run()
+  data = HomeActivities.run(logger=LOGGER)
   return data, 200
 
 @app.route("/api/activities/home", methods=['GET'])
 @xray_recorder.capture('activities_home')
 @jwt_required(on_error=default_home_feed)
 def data_home():
-    data = HomeActivities.run(cognito_user_id=g.cognito_user_id)
+    data = HomeActivities.run(logger=LOGGER,cognito_user_id=g.cognito_user_id)
     return data, 200
 
 
