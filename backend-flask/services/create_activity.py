@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from lib.db import db
 
 class CreateActivity:
-  def run(message, user_handle, ttl):
+  def run(message, cognito_user_id, ttl):
     model = {
       'errors': None,
       'data': None
@@ -31,8 +31,8 @@ class CreateActivity:
     else:
       model['errors'] = ['ttl_blank']
 
-    if user_handle == None or len(user_handle) < 1:
-      model['errors'] = ['user_handle_blank']
+    if cognito_user_id == None or len(cognito_user_id) < 1:
+      model['errors'] = ['cognito_user_id_blank']
 
     if message == None or len(message) < 1:
       model['errors'] = ['message_blank'] 
@@ -41,13 +41,12 @@ class CreateActivity:
 
     if model['errors']:
       model['data'] = {
-        'handle':  user_handle,
+        'handle':  cognito_user_id,
         'message': message
       }   
     else:
       expires_at = (now + ttl_offset)
-      uuid = CreateActivity.create_activity(user_handle,message,expires_at)
-
+      uuid = CreateActivity.create_activity(cognito_user_id,message,expires_at)
       object_json = CreateActivity.query_object_activity(uuid)
       model['data'] = object_json
     return model
@@ -67,7 +66,7 @@ class CreateActivity:
     })
 
 class CreateActivity:
-    def run(message, user_handle, ttl):
+    def run(message, cognito_user_id, ttl):
         model = {
             'errors': None,
             'data': None
@@ -92,7 +91,7 @@ class CreateActivity:
         else:
             model['errors'] = ['ttl_blank']
 
-        if user_handle == None or len(user_handle) < 1:
+        if cognito_user_id == None or len(user_handle) < 1:
             model['errors'] = ['user_handle_blank']
 
         if message == None or len(message) < 1:
@@ -102,13 +101,13 @@ class CreateActivity:
 
         if model['errors']:
             model['data'] = {
-                'handle':  user_handle,
+                'handle':  cognito_user_id,
                 'message': message
             }
         else:
             expires_at = (now + ttl_offset)
             uuid = CreateActivity.create_activity(
-                user_handle, message, expires_at)
+                cognito_user_id, message, expires_at)
             object_json = CreateActivity.query_object_activity(uuid)
             model['data'] = object_json
         return model

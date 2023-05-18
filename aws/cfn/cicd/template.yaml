@@ -9,7 +9,7 @@ Parameters:
     Default: prod
   GithubRepo:
     Type: String
-    Default: 'omenking/aws-bootcamp-cruddur-2023'
+    Default: 'xmaroradox/aws-bootcamp-cruddur-2023'
   ClusterStack:
     Type: String
   ServiceStack:
@@ -87,9 +87,11 @@ Resources:
                 ClusterName:
                   Fn::ImportValue:
                     !Sub ${ClusterStack}ClusterName
-                ServiceName:
-                  Fn::ImportValue:
-                    !Sub ${ServiceStack}ServiceName
+                # We decided not use a cross-stack so we can tear
+                # down a service seperate from it.
+                ServiceName: backend-flask
+                #  Fn::ImportValue:
+                #    !Sub ${ServiceStack}ServiceName
   CodePipelineRole:
     Type: AWS::IAM::Role
     Properties:
