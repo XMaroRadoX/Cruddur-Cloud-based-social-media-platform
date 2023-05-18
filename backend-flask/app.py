@@ -45,7 +45,6 @@ import watchtower
 import logging
 from time import strftime
 
-app = Flask(__name__)
 # Configuring Logger to Use CloudWatch
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.DEBUG)
@@ -75,6 +74,7 @@ provider.add_span_processor(simple_processor)
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
+app = Flask(__name__)
 
 # cognito_jwt_token = CognitoJwtToken(
 #     user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"),
