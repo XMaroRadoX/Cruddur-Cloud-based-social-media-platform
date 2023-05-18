@@ -4,7 +4,7 @@ from jose import jwk, jwt
 from jose.exceptions import JOSEError
 from jose.utils import base64url_decode
 from functools import wraps, partial
-from flask import app, request, g
+from flask import request, g
 import os
 
 class FlaskAWSCognitoError(Exception):
@@ -136,7 +136,6 @@ def jwt_required(f=None, on_error=None):
             g.cognito_user_id = claims['sub']  # storing the user_id in the global g object
         except TokenVerifyError as e:
             # unauthenticated request
-            app.logger.debug(e)
             if on_error:
                 on_error(e)
             return {}, 401

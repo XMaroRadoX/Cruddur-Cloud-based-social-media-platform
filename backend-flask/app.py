@@ -142,11 +142,12 @@ def health_check():
 @app.route("/api/message_groups", methods=['GET'])
 @jwt_required()
 def data_message_groups():
-  model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
-  if model['errors'] is not None:
-    return model['errors'], 422
-  else:
-    return model['data'], 200
+    access_token = extract_access_token(request.headers)
+    model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
+    if model['errors'] is not None:
+        return model['errors'], 422
+    else:
+        return model['data'], 200
 
 
 @app.route("/api/messages/<string:message_group_uuid>", methods=['GET'])
