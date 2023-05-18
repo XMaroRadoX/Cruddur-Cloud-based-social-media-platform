@@ -20,7 +20,7 @@ from services.update_profile import *
 
 
 # Cognito
-from lib.cognito_jwt_token import *
+from lib.cognito_jwt_token import  jwt_required
 
 # HoneyComb -------
 from opentelemetry import trace
@@ -142,36 +142,25 @@ def health_check():
 @app.route("/api/message_groups", methods=['GET'])
 @jwt_required()
 def data_message_groups():
-    access_token = extract_access_token(request.headers)
-    model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
-    if model['errors'] is not None:
-        return model['errors'], 422
-    else:
-        return model['data'], 200
+  model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
+  if model['errors'] is not None:
+    return model['errors'], 422
+  else:
+    return model['data'], 200
 
 
 @app.route("/api/messages/<string:message_group_uuid>", methods=['GET'])
 @jwt_required()
 def data_messages(message_group_uuid):
-    access_token = extract_access_token(request.headers)
-    try:
-        claims = cognito_jwt_token.verify(access_token)
-        # authenicatied request
-        app.logger.debug("authenicated")
-        app.logger.debug(claims)
-        cognito_user_id = claims['sub']
-        model = Messages.run(
-            cognito_user_id=cognito_user_id,
-            message_group_uuid=message_group_uuid
-        )
-        if model['errors'] is not None:
-            return model['errors'], 422
-        else:
-            return model['data'], 200
-    except TokenVerifyError as e:
-        # unauthenicatied request
-        app.logger.debug(e)
-        return {}, 401
+  model = Messages.run(
+      cognito_user_id=g.cognito_user_id,
+      message_group_uuid=message_group_uuid
+    )
+  if model['errors'] is not None:
+    return model['errors'], 422
+  else:
+    return model['data'], 200
+
 
 
 @app.route("/api/messages", methods=['POST', 'OPTIONS'])
