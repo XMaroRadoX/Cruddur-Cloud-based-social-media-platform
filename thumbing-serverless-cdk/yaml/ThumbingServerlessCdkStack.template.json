@@ -313,7 +313,7 @@
         {
          "Ref": "AWS::Region"
         },
-        "ca-central-1"
+        "us-east-1"
        ]
       },
       {

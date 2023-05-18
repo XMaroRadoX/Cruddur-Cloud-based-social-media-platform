@@ -51,3 +51,14 @@ cd ..
 LABEL="BootStraping "
 printf "${CYAN}${LABEL}${NO_COLOR}\n"
 bin/bootstrap
+
+#CLOUDFRONT
+LABEL="CLOUDFRONT DEPENDENCIES "
+printf "${CYAN}${LABEL}${NO_COLOR}\n"
+sudo bundle update --bundler
+sudo pip install cfn-lint
+sudo apt install cargo
+sudo cargo install cfn-guard
+sudo gem install cfn-toml
+sudo pip install aws-sam-cli
+sudo gem install aws_s3_website_sync

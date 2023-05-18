@@ -10,7 +10,7 @@
   font-size: 16px;
   color: #fff;
   padding: 16px;
-  border-bottom: solid 1px var(--separtor-color);
+  border-bottom: solid 3px var(--separtor-color);
 }
 
 .suggested_users .user {
