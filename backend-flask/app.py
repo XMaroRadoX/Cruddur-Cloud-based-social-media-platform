@@ -79,7 +79,7 @@ app = Flask(__name__)
 # cognito_jwt_token = CognitoJwtToken(
 #     user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"),
 #     user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"),
-#     region=os.getenv("AWS_DEFAULT_REGION")
+#     regon=os.getenv("AWS_DEFAULT_REGION")
 # )
 # Rollbar --------------
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
@@ -273,7 +273,6 @@ def data_activities_reply(activity_uuid):
         return model['errors'], 422
     else:
         return model['data'], 200
-    return
 
 @app.route("/api/users/@<string:handle>/short", methods=['GET'])
 def data_users_short(handle):
