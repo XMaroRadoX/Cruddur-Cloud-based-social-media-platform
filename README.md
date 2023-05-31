@@ -1,14 +1,15 @@
 # 🐦 Cruddur: A true ephemeral social media platform 🐦
 
+
+
 <p align="center" width="100%">
-<img src="_docs/assets/cruddur-banner.jpg" height="200px" width="200px">
+<img src="_docs/assets/cruddur-banner.jpg">
 </p>
-
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/XMaroRadoX/aws-bootcamp-cruddur-2023)
-![](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiOS9PM1dhekMzNVlRVmhYRVBXUzk2L0haSElPYnRHdUdKSmRNOXFUaDVNMDRmNU1BV2kyeEE3SEJHVld2eGhNRFFvbEhVR3ZGaEpuSm10UW5EbGMrUk5NPSIsIml2UGFyYW1ldGVyU3BlYyI6IjZWL3o5VFYxQUVQMDBidFIiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
-
 Cruddur is a new micro-blogging platform that emphasizes privacy and the present moment. Users can post updates, thoughts, and photos that automatically expire after a period of time. It aims to reduce trust and safety issues commonly found on social media platforms by limiting personal information, decreasing cyberbullying, and improving the overall user experience. Cruddur also focuses on building a sense of community and increasing trust and safety among users.
+
+![](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiOS9PM1dhekMzNVlRVmhYRVBXUzk2L0haSElPYnRHdUdKSmRNOXFUaDVNMDRmNU1BV2kyeEE3SEJHVld2eGhNRFFvbEhVR3ZGaEpuSm10UW5EbGMrUk5NPSIsIml2UGFyYW1ldGVyU3BlYyI6IjZWL3o5VFYxQUVQMDBidFIiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/XMaroRadoX/aws-bootcamp-cruddur-2023)
+
 
 ## Key Features 🔑
 * Ephemeral Posts: Users can create updates, thoughts, and photos that automatically expire after a certain period of time, ensuring that personal information and conversations stay relevant and in the moment. ⏳
@@ -102,7 +103,6 @@ The `/journal` directory contains:
 | [DynamoDB and Serverless Caching](journal/week5.md)   |   |
 | [Deploying Containers](journal/week6.md)   |                              |
 
-You can mark each week as completed using checkboxes.
 
 
 ### Licensing :pencil:
