@@ -21,15 +21,15 @@ Cruddur is a new micro-blogging platform that emphasizes privacy and the present
 > Photos displyed below shows website in action
 
 <p align="center" width="100%">
-<img src="_docs/assets/sign_in.jpg">
+<img src="_docs/assets/signin.png">
  Sign-in Page
 </p>
 <p align="center" width="100%">
-<img src="_docs/assets/homeFeed.jpg">
+<img src="_docs/assets/homefeed.png">
  Homefeed
 </p>
 <p align="center" width="100%">
-<img src="_docs/assets/profile.jpg">
+<img src="_docs/assets/profile.png">
 Messages
 </p>
 
