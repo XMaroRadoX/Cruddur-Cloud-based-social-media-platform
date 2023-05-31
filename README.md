@@ -99,8 +99,8 @@ This code is licensed under the Apache 2.0 License.
 ### Authors :pen:
 
 * [Marwan Radwan](https://github.com/XMaroRadoX)
-* [Andrew Brown] (https://github.com/omenking)
-* 
+* [Andrew Brown](https://github.com/omenking)
+
 ### Contribution :clinking_glasses:
 
 
