@@ -30,27 +30,14 @@ Cruddur is a new micro-blogging platform that emphasizes privacy and the present
 </p>
 <p align="center" width="100%">
 <img src="_docs/assets/profile.png">
-Messages
+Profile
 </p>
 
 
 ## System Design 🛠️
 
->The ERD provides a visual representation of the relationships between the various entities, such as customers, vehicles, and rental transactions, in the system. The data mapping, on the other hand, defines how data is stored in the database and how it will be used by different components of the system. Together, the ERD and data mapping provide a comprehensive overview of the system architecture and data flow, ensuring a well-designed and efficient car rental system.
-
-
 <p align="center" width="100%">
-<img src="design/erd_model.png">                  
-</p>
-
- <p align="center" width="100%">
-ERD model
-</p>
- <p align="center" width="100%">
-<img src="design/mapping.png">
-</p>
-<p align="center" width="100%">
-ERD model Mapping
+<img src="_docs/assets/cruddur_diagram.png">                  
 </p>
 
 
