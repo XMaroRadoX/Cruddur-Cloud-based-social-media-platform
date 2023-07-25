@@ -9,4 +9,6 @@ frontend-react-js/build/*
 docker/**/*
 .aws-sam
 build.toml
+session-manager-plugin.deb
+*.lock
 tmp/*
