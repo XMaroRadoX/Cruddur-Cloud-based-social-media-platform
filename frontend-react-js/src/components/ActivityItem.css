@@ -32,7 +32,14 @@
   color: rgba(255,255,255,0.8);
   font-weight: 800;
 }
-
+a.handle {
+  text-decoration: none;
+  color: #c471ff;
+}
+a.display_name {
+  color: white;
+  text-decoration: none;
+}
 .activity_item .activity_actions .icon{
   height: 18px;
   width: 18px;
