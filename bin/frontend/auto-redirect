@@ -1,0 +1,11 @@
+#! /usr/bin/bash
+
+aws cognito-idp update-user-pool-client \
+--user-pool-id $AWS_COGNITO_USER_POOL_ID \
+--client-id $AWS_COGNITO_USER_POOL_CLIENT_ID \
+--callback-urls https://cruddur.marorado.com \
+--logout-urls https://cruddur.marorado.com \
+--supported-identity-providers Google \
+--allowed-o-auth-flows-user-pool-client \
+--allowed-o-auth-flows implicit \
+--allowed-o-auth-scopes {email,openid,profile,aws.cognito.signin.user.admin}

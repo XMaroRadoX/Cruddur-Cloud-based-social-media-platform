@@ -1,0 +1,5 @@
+
+[deploy]
+bucket = 'mk-cfn-artifacts'
+region = 'us-east-1'
+stack_name = 'CrdMachinueUser'
